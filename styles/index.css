@@ -459,6 +459,21 @@
     display: block;
   }
 
+  .mobile-cart a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .mobile-cart i {
+    font-size: 18px;
+  }
+
+  /*banner */
   .banner {
     flex-direction: column;
     padding: 40px 16px;
@@ -473,7 +488,7 @@
     width: 100%;
   }
 
-  /*banner */
+
   .banner {
     flex-direction: column;
     padding: 40px 16px;
