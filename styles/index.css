@@ -147,7 +147,76 @@
 }
 
 .add-to-cart:hover {
-  background-color: #ea580c;
+  background-color: #E95A08;
+}
+
+.plants-lover-section {
+  background-color: #f5f6fa;
+  padding: 100px 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+.plants-lover-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.lover-image-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.lover-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -150px;
+  left: 100%;
+  transform: translateX(-55%);
+  width: 300px;
+
+}
+
+.lover-content {
+  flex: 1;
+  min-width: 540px;
+}
+
+.lover-content h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000 100%;
+}
+
+.lover-content p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 22px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.lover-content p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #b6b7c0;
+  font-size: 20px;
+  line-height: 1;
+  top: 2px;
 }
 
 /* mobile responsive */
@@ -200,6 +269,7 @@
     padding: 40px 20px;
   }
 
+
   .plants-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -222,6 +292,7 @@
     font-size: 36px;
     text-align: left;
   }
+
 
   .lover-content p {
     font-size: 18px;
