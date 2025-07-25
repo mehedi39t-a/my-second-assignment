@@ -193,6 +193,10 @@
   min-width: 540px;
 }
 
+.lover-content span {
+  display: block;
+}
+
 .lover-content h2 {
   font-size: 50px;
   font-weight: bold;
@@ -217,6 +221,90 @@
   font-size: 20px;
   line-height: 1;
   top: 2px;
+}
+
+/* latest deal  */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.latest-deals-section {
+  background-color: #f5f6fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.deals-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.deals-header .highlight {
+  color: orange;
+}
+
+.deals-header p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.deals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.deal-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deal-box {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.deal-box.small {
+  width: 360px;
+  height: 150px;
+}
+
+.deal-box.large {
+  width: 740px;
+  height: 320px;
+}
+
+.deal-content {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.deal-content p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.deal-content a {
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* mobile responsive */
@@ -269,6 +357,9 @@
     padding: 40px 20px;
   }
 
+  .lover-content span {
+    display: inline;
+  }
 
   .plants-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -305,5 +396,36 @@
 
   .plants-lover-section {
     padding: 60px 20px;
+  }
+
+  /* ✅ Latest Deals */
+
+  .deals-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .deal-left {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+
+  .deal-box.small,
+  .deal-box.large {
+    width: 100%;
+    height: 160px;
+    max-width: 100%;
+  }
+
+  .deals-header h2 {
+    font-size: 28px;
+  }
+
+  .deals-header p {
+    font-size: 16px;
+    padding: 0 10px;
   }
 }
