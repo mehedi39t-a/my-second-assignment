@@ -1,0 +1,66 @@
+/* navbar style  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 150px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+
+.mobile-cart {
+  display: none;
+}
+
+.mobile-cart a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* mobile responsive */
+@media (max-width: 768px) {
+
+  /* ✅ Navbar */
+  .navbar {
+    padding: 13px 16px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-cart {
+    display: block;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 40px 16px;
+    text-align: left;
+  }
+
+  .banner-image {
+    order: -1;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+}
