@@ -307,6 +307,60 @@
   font-weight: 500;
 }
 
+/* input type section  */
+.join-section {
+  background-image: url('../assets/news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.join-overlay {
+  max-width: 700px;
+  margin: auto;
+}
+
+.join-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.join-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+}
+
+.join-form input[type="email"] {
+  padding: 15px 20px;
+  border: none;
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  font-size: 16px;
+}
+
+.join-form button {
+  padding: 16px 20px;
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  /* border-radius: 4px; */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-form button:hover {
+  background-color: #e69500;
+}
+
 /* mobile responsive */
 @media (max-width: 768px) {
 
@@ -428,4 +482,30 @@
     font-size: 16px;
     padding: 0 10px;
   }
+
+  /* input type section */
+  .join-section {
+    padding: 60px 20px;
+  }
+
+  .join-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .join-form {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .join-form input[type="email"],
+  {
+  flex: 1;
+
+}
+
+.join-form button {
+  white-space: nowrap;
+}
 }
