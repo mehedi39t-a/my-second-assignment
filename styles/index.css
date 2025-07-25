@@ -351,7 +351,6 @@
   background-color: #E95A08;
   color: white;
   border: none;
-  /* border-radius: 4px; */
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -359,6 +358,89 @@
 
 .join-form button:hover {
   background-color: #e69500;
+}
+
+/* footer section  */
+.footer {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #555;
+  max-width: 280px;
+}
+
+.footer-links {
+  flex: 2 1 400px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.link-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-column ul li {
+  margin-bottom: 8px;
+}
+
+.link-column ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.link-column ul li a:hover {
+  color: #E95A08;
+}
+
+.footer-social {
+  flex: 1 1 150px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
 }
 
 /* mobile responsive */
@@ -452,7 +534,7 @@
     padding: 60px 20px;
   }
 
-  /* ✅ Latest Deals */
+  /* latest deals */
 
   .deals-container {
     flex-direction: column;
@@ -508,4 +590,67 @@
 .join-form button {
   white-space: nowrap;
 }
+
+/* footer */
+@media (max-width: 768px) {
+  .footer-container {
+    display: block;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .footer-left,
+  .footer-links,
+  .footer-social,
+  .link-column,
+  .link-column h4,
+  .link-column ul,
+  .link-column ul li,
+  .footer-left p {
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .footer-links {
+    display: block;
+    width: 100%;
+  }
+
+  .link-column {
+    display: block;
+    width: 100%;
+  }
+
+  .link-column h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    gap: 16px;
+  }
+
+  p {
+    gap: 15px;
+  }
+
+  .link-column ul {
+    list-style: none;
+  }
+
+  .link-column ul li a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-top: 15px;
+  }
 }
